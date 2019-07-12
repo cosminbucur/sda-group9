@@ -2,7 +2,7 @@ package com.bucur.solid.liskov.after;
 
 import com.bucur.solid.liskov.before.Engine;
 
-public class DeviceWithEngine {
+public class DeviceWithEngine extends TransportationDevice {
 
     private Engine engine;
 

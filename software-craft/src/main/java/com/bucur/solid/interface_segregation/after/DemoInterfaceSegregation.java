@@ -1,6 +1,7 @@
 package com.bucur.solid.interface_segregation.after;
 
-public class InterfaceSegregationDemo {
+// define subsets of functionality as interfaces
+public class DemoInterfaceSegregation {
 
     public static void main(String[] args) {
         ToyBuilder.buildToyHouse();

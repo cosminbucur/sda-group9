@@ -26,6 +26,14 @@ The project contains multiple sub modules, each with a similar structure:
 
 ### software-craft
 
+- cohesion
+- coupling
+- demeter
+- fluent
+- DRY
+- SOLID
+- GRASP
+
 ### hibernate
 
 ---

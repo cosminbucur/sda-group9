@@ -1,12 +1,12 @@
 package com.bucur.solid.open_closed.after;
 
-public class Substraction implements IOperation {
+public class Subraction implements IOperation {
 
     private double firstOperand;
     private double secondOperand;
     private double result = 0.0;
 
-    public Substraction(double firstOperand, double secondOperand) {
+    public Subraction(double firstOperand, double secondOperand) {
         this.firstOperand = firstOperand;
         this.secondOperand = secondOperand;
     }

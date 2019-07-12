@@ -6,7 +6,7 @@ import java.util.function.IntToDoubleFunction;
  * Since a primitive type can’t be a generic type argument, there are versions of the Function interface
  * for most used primitive types. You can also write your own.
  */
-public class PrimitiveFunctions {
+public class DemoPrimitiveFunctions {
 
     public static void main(String[] args) {
         int[] array = {1, 2, 3};
