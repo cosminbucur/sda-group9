@@ -29,6 +29,7 @@ public class Mother {
     @Column(name = "country")
     private String country;
 
+    // TODO: one to many unidirectional
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true)

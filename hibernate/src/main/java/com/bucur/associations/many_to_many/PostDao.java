@@ -6,18 +6,24 @@ import org.hibernate.Transaction;
 
 public class PostDao {
 
+    private Session session;
+    private Transaction tx;
+
     public void create(Post post) {
-        Transaction transaction = null;
         try {
-            Session session = HibernateUtil.getSessionFactory().openSession();
-            transaction = session.beginTransaction();
+            session = HibernateUtil.getSessionFactory().openSession();
+            tx = session.beginTransaction();
             session.save(post);
-            transaction.commit();
+            tx.commit();
         } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
+            if (tx != null) {
+                tx.rollback();
             }
             e.printStackTrace();
+        } finally {
+            if (session != null) {
+                session.close();
+            }
         }
     }
 

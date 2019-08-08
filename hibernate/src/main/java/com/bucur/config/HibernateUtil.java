@@ -11,6 +11,9 @@ import com.bucur.associations.one_to_many_uni_join.Son;
 import com.bucur.associations.one_to_one.Account;
 import com.bucur.associations.one_to_one.Employee;
 import com.bucur.crud.Person;
+import com.bucur.hibernate_types.Player;
+import com.bucur.queries.hql.Stock;
+import com.bucur.queries.native_query.Trader;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -76,6 +79,13 @@ public class HibernateUtil {
         // many to many
         configuration.addAnnotatedClass(Post.class);
         configuration.addAnnotatedClass(Tag.class);
+
+        // hql
+        configuration.addAnnotatedClass(Stock.class);
+        configuration.addAnnotatedClass(Trader.class);
+
+        // hibernate types
+        configuration.addAnnotatedClass(Player.class);
 
         return configuration;
     }

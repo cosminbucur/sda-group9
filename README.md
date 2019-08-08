@@ -18,6 +18,7 @@ The project contains multiple sub modules, each with a similar structure:
 ### java-advanced
 - lambda
 - streams
+- concurrency
 
 ### java-advanced-code
 
@@ -34,7 +35,20 @@ The project contains multiple sub modules, each with a similar structure:
 - SOLID
 - GRASP
 
+### sql
+- resources
+
 ### hibernate
+- config
+- CRUD
+- states
+- hibernate_types
+- transactions
+- associations
+- queries
+
+### nosql
+- mongo
 
 ---
 
@@ -60,4 +74,3 @@ The project contains multiple sub modules, each with a similar structure:
 	check auto import and wait
 
 	update project
-
