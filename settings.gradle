@@ -5,4 +5,7 @@ include 'java-advanced'
 include 'sql'
 include 'hibernate'
 include 'nosql'
+include 'java-fx'
+include 'server-practice'
+include 'jvm'
 
