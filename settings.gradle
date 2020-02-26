@@ -1,4 +1,4 @@
-rootProject.name = 'group9'
+rootProject.name = 'sda-group9'
 include 'java-advanced-code'
 include 'software-craft'
 include 'java-advanced'
